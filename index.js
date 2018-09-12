@@ -1,4 +1,4 @@
-const skill = require('./lib/skill');
+const skill = require('./skill');
 
 module.exports.mainGET = function(req, res) {
 
