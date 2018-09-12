@@ -1,0 +1,20 @@
+{
+  "name": "ElAlfabeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Jakob Hohlfeld <jhohlfeld@polyban.io>",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk": "^2.0.7",
+    "jest": "^23.5.0",
+    "winston": "^3.1.0"
+  },
+  "jest": {
+    "setupFiles": ["./jest.setup.js"]
+  }
+}

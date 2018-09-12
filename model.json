@@ -1,0 +1,57 @@
+{
+  "interactionModel":
+  {
+    "languageModel":
+    {
+      "invocationName": "el alfabeto con mikarmen",
+      "intents": [
+        {
+          "name": "LaunchIntent",
+          "samples": []
+        },
+
+        {
+          "name": "ExplanationIntent",
+          "samples": [
+            "Escuchar",
+            "Escuchar la explicación",
+            "Quiero escuchar la explicación por favor"
+          ]
+        },
+
+        {
+          "name": "PracticeIntent",
+          "samples": [
+            "Practicar",
+            "Empezar a practicar",
+            "Quiero empezar a practicar por favor"
+          ]
+        },
+
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "detener"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop",
+            "hasta luego"
+          ]
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        }
+      ]
+    }
+  }
+}
