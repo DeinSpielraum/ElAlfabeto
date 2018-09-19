@@ -1,15 +1,15 @@
 const skill = require('./skill');
 
-module.exports.mainGET = function(req, res) {
+module.exports.mainGET = function(request, response) {
 
-  console.log(JSON.stringify(req.body, null, 2));
+  console.log(JSON.stringify(request.body, null, 2));
 
-  skill.invoke(req.body)
+  skill.invoke(request.body)
     .then(function(responseBody) {
-      res.json(responseBody);
+      response.json(responseBody);
     })
     .catch(function(error) {
       console.log(error);
-      res.status(500).send('Error during the request');
+      response.status(500).send('Error during the request');
     });
 }

@@ -1,33 +1,37 @@
 {
-  "interactionModel":
-  {
-    "languageModel":
-    {
+  "interactionModel": {
+    "languageModel": {
       "invocationName": "el alfabeto con mikarmen",
       "intents": [
         {
           "name": "LaunchIntent",
+          "slots": [],
           "samples": []
         },
-
         {
           "name": "ExplanationIntent",
+          "slots": [],
           "samples": [
             "Escuchar",
             "Escuchar la explicación",
             "Quiero escuchar la explicación por favor"
           ]
         },
-
         {
           "name": "PracticeIntent",
+          "slots": [
+            {
+              "name": "letter",
+              "type": "LETTER"
+            }
+          ],
           "samples": [
+            "{letter}",
             "Practicar",
             "Empezar a practicar",
             "Quiero empezar a practicar por favor"
           ]
         },
-
         {
           "name": "AMAZON.CancelIntent",
           "samples": [
@@ -50,6 +54,143 @@
         {
           "name": "AMAZON.RepeatIntent",
           "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "LETTER",
+          "values": [
+            {
+              "name": {
+                "value": "z"
+              }
+            },
+            {
+              "name": {
+                "value": "y"
+              }
+            },
+            {
+              "name": {
+                "value": "x"
+              }
+            },
+            {
+              "name": {
+                "value": "w"
+              }
+            },
+            {
+              "name": {
+                "value": "v"
+              }
+            },
+            {
+              "name": {
+                "value": "u"
+              }
+            },
+            {
+              "name": {
+                "value": "t"
+              }
+            },
+            {
+              "name": {
+                "value": "s"
+              }
+            },
+            {
+              "name": {
+                "value": "r"
+              }
+            },
+            {
+              "name": {
+                "value": "q"
+              }
+            },
+            {
+              "name": {
+                "value": "p"
+              }
+            },
+            {
+              "name": {
+                "value": "o"
+              }
+            },
+            {
+              "name": {
+                "value": "n"
+              }
+            },
+            {
+              "name": {
+                "value": "m"
+              }
+            },
+            {
+              "name": {
+                "value": "l"
+              }
+            },
+            {
+              "name": {
+                "value": "k"
+              }
+            },
+            {
+              "name": {
+                "value": "j"
+              }
+            },
+            {
+              "name": {
+                "value": "i"
+              }
+            },
+            {
+              "name": {
+                "value": "h"
+              }
+            },
+            {
+              "name": {
+                "value": "g"
+              }
+            },
+            {
+              "name": {
+                "value": "f"
+              }
+            },
+            {
+              "name": {
+                "value": "e"
+              }
+            },
+            {
+              "name": {
+                "value": "d"
+              }
+            },
+            {
+              "name": {
+                "value": "c"
+              }
+            },
+            {
+              "name": {
+                "value": "b"
+              }
+            },
+            {
+              "name": {
+                "value": "a"
+              }
+            }
+          ]
         }
       ]
     }

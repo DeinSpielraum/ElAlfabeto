@@ -25,3 +25,108 @@ Object {
   "version": "1.0",
 }
 `;
+
+exports[`Skill should invoke PracticeIntent 1`] = `
+Object {
+  "response": Object {
+    "card": Object {
+      "content": "<p>Actividad uno. Escucha atentamente las letras del alfabeto español.</p><p>a</p>",
+      "title": "Actividad uno.",
+      "type": "Simple",
+    },
+    "directives": Array [
+      Object {
+        "slotToElicit": "letter",
+        "type": "Dialog.ElicitSlot",
+      },
+    ],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Actividad uno. Escucha atentamente las letras del alfabeto español.</p><p>a</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>¿Quieres que vuelva a leerlas?</speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "currentLetter": "a",
+    "state": "PRACTICE_1",
+  },
+  "userAgent": "ask-node/2.0.7 Node/v8.11.1",
+  "version": "1.0",
+}
+`;
+
+exports[`Skill should invoke PracticeIntent with right answer 1`] = `
+Object {
+  "response": Object {
+    "card": Object {
+      "content": "<p>Right answer!</p><p>b</p>",
+      "title": "Actividad uno.",
+      "type": "Simple",
+    },
+    "directives": Array [
+      Object {
+        "slotToElicit": "letter",
+        "type": "Dialog.ElicitSlot",
+      },
+    ],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Right answer!</p><p>b</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>¿Quieres que vuelva a leerlas?</speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "currentLetter": "b",
+    "state": "PRACTICE_1",
+  },
+  "userAgent": "ask-node/2.0.7 Node/v8.11.1",
+  "version": "1.0",
+}
+`;
+
+exports[`Skill should invoke PracticeIntent with wrong answer 1`] = `
+Object {
+  "response": Object {
+    "card": Object {
+      "content": "<p>Wrong answer, please repeat.</p><p>a</p>",
+      "title": "Actividad uno.",
+      "type": "Simple",
+    },
+    "directives": Array [
+      Object {
+        "slotToElicit": "letter",
+        "type": "Dialog.ElicitSlot",
+      },
+    ],
+    "outputSpeech": Object {
+      "ssml": "<speak><p>Wrong answer, please repeat.</p><p>a</p></speak>",
+      "type": "SSML",
+    },
+    "reprompt": Object {
+      "outputSpeech": Object {
+        "ssml": "<speak>¿Quieres que vuelva a leerlas?</speak>",
+        "type": "SSML",
+      },
+    },
+    "shouldEndSession": false,
+  },
+  "sessionAttributes": Object {
+    "currentLetter": "a",
+    "state": "PRACTICE_1",
+  },
+  "userAgent": "ask-node/2.0.7 Node/v8.11.1",
+  "version": "1.0",
+}
+`;

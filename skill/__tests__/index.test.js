@@ -2,12 +2,22 @@ const skill = require('../index');
 
 describe('Skill', () => {
   it('should invoke LaunchIntent', () => {
-    return skill.invoke(require('../__mocks__/request.LaunchRequest.json'))
-    .then(responseBody => expect(responseBody).toMatchSnapshot())
+    return expect(skill.invoke(require('../__mocks__/request.LaunchRequest.json')))
+     .resolves.toMatchSnapshot();
   });
 
   it('should invoke PracticeIntent', () => {
-    return skill.invoke(require('../__mocks__/request.PracticeIntent.json'))
-    .then(responseBody => console.log(responseBody))
+    return expect(skill.invoke(require('../__mocks__/request.PracticeIntent.json')))
+     .resolves.toMatchSnapshot();
+  });
+
+  it(`should invoke PracticeIntent with right answer`, () => {
+    return expect(skill.invoke(require('../__mocks__/request.PracticeIntent-right_answer.json')))
+     .resolves.toMatchSnapshot();
+  });
+
+  it(`should invoke PracticeIntent with wrong answer`, () => {
+    return expect(skill.invoke(require('../__mocks__/request.PracticeIntent-wrong_answer.json')))
+     .resolves.toMatchSnapshot();
   });
 });
